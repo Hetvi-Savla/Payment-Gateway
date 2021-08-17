@@ -1,0 +1,142 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #d6c7b5;
+  }
+  
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative ;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";    
+    
+    background-color:darkcyan;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    }
+    
+/* Navigation Bar: logo and Image */
+#logo{
+margin: 10px 34px;
+}
+#logo img{
+    height:54px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: list Styling */
+#navbar ul{
+    display: flex;
+    
+}
+
+#navbar ul li{
+list-style: none;
+font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: black;
+    
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* CARD SECTION */
+
+.container{
+    position:relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding:20px 0px;    
+}
+.title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #222;
+}
+
+.title h1{
+    font-weight: bold;
+    
+}
+
+.container .card{
+    position: relative;
+    background: #1d708b;
+    margin: 30px 12px;
+    padding: 20px 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 369px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 50%);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover{
+    height: 470px;
+}
+
+.container .card .imgBx{
+    position:relative;
+    width:260px;
+    height:180px;
+    top:-60px;
+    left:20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.container .card .imgBx img{
+    max-width:100%;
+    border-radius:4px;
+}
+
+.container .card .content{
+    position:relative;
+    margin-top:-140px;
+    padding:10px 15px;
+    text-align:center;
+    color:#111;
+    visibility:hidden;
+    opacity: 0;
+    transition:0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility:visible;
+    opacity:1;
+    margin-top:-40px;
+    transition-delay: 0.3s;
+}
+#img1{
+    background:url('/img/aboutus\ bg.jpg') no-repeat center center/cover;
+
+}

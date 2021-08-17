@@ -1,0 +1,399 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position:relative ;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";    
+    background-color:darkcyan;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    }
+
+/* Navigation Bar: logo and Image */
+#logo{
+margin: 10px 34px;
+}
+
+#logo img{
+    height:54px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: list Styling */
+#navbar ul{
+    display: flex;  
+}
+
+#navbar ul li{
+list-style: none;
+font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* MAIN SECTION */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 541px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    
+}
+#home::before{
+    content: "";    
+    
+    background:url('../img/water bgimage.jpg') no-repeat center center/cover;
+    filter: brightness(60%) ;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;   
+}
+
+#home h1{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#home p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: -67px;
+}
+
+.button{
+    padding: 6px 18px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* SECTION HOME1 */
+    
+#home-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 19px 50px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: normal;
+    margin: -53px auto;
+    width: 68%;
+}
+
+#home-1::before{
+    content: "";
+    position: absolute;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+    top: 0px;
+    left: 0px;
+}
+ 
+#home-1 h1{
+    color: blue;
+    text-align: center;
+    font-style: italic;
+    font-size: 35px;
+}
+#home-1 h2{
+    color: rgb(27, 24, 24);
+    text-align: center;
+    font-family: 'Noto Sans TC",sans-serif';
+    font-weight: normal;
+    font-size: 20px;
+}
+ 
+#home-1 p{
+    color: rgb(27, 24, 24);
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Noto Sans TC",sans-serif';   
+}
+
+/* utility class */
+h.primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+ 
+/* Services Container */
+#services{
+    margin: 34px;
+    display:flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 26px;
+    margin: 3px 8px;
+    border-radius: 43px;
+    background: cornsilk;
+    transition: ease-in-out;
+    transition-duration: 2s;
+}
+
+#services .box img{
+    height: 121px;
+    display: block;
+    margin:auto;
+}
+#services .box p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    padding: 80px;
+}
+
+.h-secondary{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+#navbar ul .btn{
+    display: flex;
+    right: 0px;
+    padding: -15px 33px;
+      color: white;
+    margin-top: 2px;
+    margin-right: 29px;
+    font-size: 1rem;
+    border-radius: 65px;
+    cursor: pointer;
+    position: absolute;
+}
+
+
+.center{
+    text-align: center;
+}
+
+.container{
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 92px auto;
+    padding: 68px 27px;
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin:0 auto;
+    background: white;
+    transition: 0.5s;
+}
+.container .card:hover{
+    box-shadow: 0 30px 50px rgba(0,0,0,0.2);
+}
+.container .card .face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .card .face.face1{
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background: powderblue;
+    color: black;
+
+}
+.container .card .face.face1 h2{
+    margin-top: 60px;
+}
+
+.container .card .face.face1 a{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #c3073f;
+border: 2px solid #c3073f;
+transition: 0.5s;
+}
+.container .card .face.face1 a:hover{
+    color: #fff;
+    background: #c3073f;  
+}
+.container .card .face.face2{
+    background-color: #c3073f;
+    transition: 0.5s;   
+}
+.container .card:hover .face.face2{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+
+}
+.container .card .face.face2 img{
+    height: 399px;
+    width: 307px;
+    transition: 0.5s;
+    border: 1px solid black;
+}
+.container .card:hover .face.face2 img{
+    width: 60px;
+    height: 75px;
+}
+
+.section_heading {
+    font-family: "Akaya Telivigala", cursive;
+    color: darkslategray;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: -155px;
+    padding-top: 20px;
+    }
+    
+    .section_heading span:nth-child(2) {
+      display: block;
+      margin: 6px auto;
+      width: 70px;
+      height: 4px;
+      border-radius: 10px;
+      background: rgba(102, 51, 153, 0.637);
+    }
+
+/* Analytics */
+.analytics_box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+     margin-top: 180px;
+    margin-bottom: 50px;
+  }
+  
+  .analytics_box .analytics_item {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .analytics_box .analytics_item img {
+    width: 90px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    border: 4px double black;
+    border-radius: 50%;
+  }
+  
+  .analytics_box .analytics_item .analytics_count {
+    margin-top: 15px;
+  }
+  
+  .analytics_box .analytics_item .analytics_term {
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    font-size: 20px !important;
+  }
+
+   /* FOOTER SECTION */
+  footer {
+    background: black;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+}
+
+#center-1 ul{
+    display: inline-flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+#center-1 ul li {
+   list-style: none;
+    font-size: 12px;  
+}
+ 
+#center-1 ul li a{
+    color: white;
+    display: block;
+    border-radius: 20px;
+    padding: 5px 0px;
+    text-decoration: none;
+    
+}
+#center-1 ul li a:hover{
+    color: burlywood;
+   display: block;   
+}
+#center-1 ul li ::after{
+    content: "|";
+    float: right;
+    color: white;
+    text-align: center;
+    padding: 0px 10px;  
+}
+
+ 
+
+
+

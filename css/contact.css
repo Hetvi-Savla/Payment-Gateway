@@ -1,0 +1,156 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+/* Navigation Bar */
+
+#navbar{
+  display: flex;
+  align-items: center;
+  position:sticky ;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+}
+
+#navbar::before{
+  content: "";     
+  background-color:darkcyan;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+  }
+
+/* Navigation Bar: logo and Image */
+#logo{
+margin: 10px 34px;
+}
+
+#logo img{
+  height:54px;
+  margin: 3px 6px;
+}
+
+/* Navigation Bar: list Styling */
+#navbar ul{
+  display: flex;
+  
+}
+
+#navbar ul li{
+list-style: none;
+font-size: 1.3rem;
+}
+
+#navbar ul li a{
+  color: black;
+  
+  display: block;
+  padding: 4px 28px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbar ul li a:hover{
+  color: black;
+  background-color: white;
+}
+
+/* CONTACT SECTION */
+body{
+  background: url('/img/bg1.jpg') no-repeat center center/cover;
+}
+
+.title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #222;
+  letter-spacing: 1.5px;
+  padding: 50px 0px;
+}
+
+.title h1{
+  z-index: -1;
+  font-weight: bold; 
+}
+.title h1::after{
+  content: "";
+  height: 6px;
+  width: 180px;
+  background-color: #222;
+  border-radius: 6px;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+form{
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  }
+.contact-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0.9;
+  height: 530px;
+  margin-top: -35px;
+}
+.con{
+  display: flex;
+  width: 100%;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+}
+.form-group{
+  padding: 18px 4px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 1.6rem;
+  
+}
+
+.myinput{
+  color: white;
+  outline: none;
+  background-color: black;
+  border-radius: 25px;
+  border: 2px solid black;
+  font-size: 18px;
+  width: 450px;
+  padding:10px;
+  margin:5px 0px;
+  box-shadow: 0 0 4px 4px #344953;
+}
+
+label{
+  color: black ;
+  font-weight: bolder;
+  font-size: 30px;
+}
+button{
+  font-size: 17px;
+  background: olive;
+  border-radius: 29px;
+  color: white;
+  text-align: center;
+  padding: 4px 22px;
+  display: flex;
+  box-shadow: 0 0 10px 4px #344953;
+}
+button:hover{
+  background-color: aquamarine;
+  color: black;
+}
